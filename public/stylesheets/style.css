@@ -1,0 +1,52 @@
+body {
+  padding-top: 30px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+[contenteditable]:empty:not(:focus):before {
+  content: attr(data-placeholder);
+  color: #808080;
+}
+
+.panel-body[contenteditable] {
+  min-height: 46px;
+}
+
+.fa {
+  padding-top: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  visibility: hidden;
+  /*transition: 0.5s;*/
+}
+
+.fa-check::before {
+  color: #5CB85C;
+}
+
+.fa-times::before {
+  color: #B85C5C;
+}
+
+.hover-area:hover .fa,
+.panel-heading:focus .fa {
+  visibility: visible;
+}
+
+.hidden {
+  display: none;
+}
+
+.shown {
+  display: block;
+}
+
+.badge {
+  position: relative;
+  right: 8px;
+  top: 8px;
+}
